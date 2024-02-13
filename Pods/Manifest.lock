@@ -1,0 +1,16 @@
+PODS:
+  - ExyteAnimatedTabBar (0.1.2)
+
+DEPENDENCIES:
+  - ExyteAnimatedTabBar
+
+SPEC REPOS:
+  trunk:
+    - ExyteAnimatedTabBar
+
+SPEC CHECKSUMS:
+  ExyteAnimatedTabBar: d5c41031342587992a6eaa14e894478441f02afa
+
+PODFILE CHECKSUM: fe25fb4cfada2e02e1163ee7c7fcda53de96e8e9
+
+COCOAPODS: 1.12.0

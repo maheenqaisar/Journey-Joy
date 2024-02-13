@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0955FDB7FC64095C02C588CEFFFEACAB /* AnimatedTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B4B7BC5B6B88768119FEA054124D68 /* AnimatedTabbar.swift */; };
+		16034B33923CCD07F707323511135FDE /* Pods-Journey-Joy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACA976560DE0B32D638BB19DA15106F3 /* Pods-Journey-Joy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F3118A2C2BD5B3093B1AB1A1B424329 /* AnimatedTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = C44749A42935976B88E1CDEE902B24B9 /* AnimatedTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5069AD62B40C148165130010B9831DB1 /* ExyteAnimatedTabBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B756ECE40911B0F93AFC78C135D9A87D /* ExyteAnimatedTabBar-dummy.m */; };
+		9716F08327E88AC5A110961F9D92F0DC /* WiggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86832ACFD1B2C305CB7C4072D414C466 /* WiggleButton.swift */; };
+		99F9C53AB25F8262B31E5E883429B078 /* DropletButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A56B75EDCE653C29A040387DDBD5F7 /* DropletButton.swift */; };
+		A45099086F8FE3CDB3DF685C4D351C08 /* Pods-Journey-Joy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B39DDFDC851AC6EADB85582DD0267C /* Pods-Journey-Joy-dummy.m */; };
+		ABB1834F8231BFB19DF2CE9763174AE4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D95F6000B4D5B8D850E3C57FB43E4D /* Utils.swift */; };
+		BB19410763BDCE8095680BB4E339200D /* ButtonsBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5CB57FBF1710BBEB9670A85C125EB /* ButtonsBarLayout.swift */; };
+		BFAC0488FAC8467BDA3B4D352DCF69CA /* BezierPathLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BA879F997D6509B9793A7C4EB5A6D /* BezierPathLength.swift */; };
+		C6BA551874B0B0DC7BE6E09F267991B5 /* GeometryEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512AB895454FAA0943CFF8AC5049EE /* GeometryEffects.swift */; };
+		CBF8C001F22A8407ADCFAA07F9BCCEB5 /* IndentableRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBEE96A2BFEF5B538E7858DD593FC39 /* IndentableRect.swift */; };
+		E13416A850E157B27885D5D7F2C04B16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F002873292B90885B2627B5DD25BAA0A /* ExyteAnimatedTabBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C4C0BB8A906A16AAC3398D85442009D /* ExyteAnimatedTabBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA8E3DA9CA2621DC19E571EB39ECE080 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAA910DD80DE0EBE4BEDB48C9196516A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57014E474344F44445A094493230B873;
+			remoteInfo = ExyteAnimatedTabBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05A6F84F196D55BADFBFC1E5462234CE /* ExyteAnimatedTabBar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ExyteAnimatedTabBar; path = ExyteAnimatedTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		263172350A972FCF75609039A05B4D1D /* Pods-Journey-Joy */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Journey-Joy"; path = Pods_Journey_Joy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D5CB57FBF1710BBEB9670A85C125EB /* ButtonsBarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonsBarLayout.swift; path = Sources/AnimatedTabBar/ButtonsBarLayout.swift; sourceTree = "<group>"; };
+		3C4C0BB8A906A16AAC3398D85442009D /* ExyteAnimatedTabBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExyteAnimatedTabBar-umbrella.h"; sourceTree = "<group>"; };
+		47B9AED9908B3707CE3BCE5A32D0CBA0 /* ExyteAnimatedTabBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ExyteAnimatedTabBar.modulemap; sourceTree = "<group>"; };
+		50977B6591A12726FE2D6ADB1909C88C /* ExyteAnimatedTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExyteAnimatedTabBar.debug.xcconfig; sourceTree = "<group>"; };
+		5B7BA879F997D6509B9793A7C4EB5A6D /* BezierPathLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BezierPathLength.swift; path = Sources/AnimatedTabBar/BezierPathLength.swift; sourceTree = "<group>"; };
+		6BED4C6E87CCB37ED545401A09BA7275 /* Pods-Journey-Joy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Journey-Joy-acknowledgements.markdown"; sourceTree = "<group>"; };
+		721ED8366C6D5C1A9EBE0417FC096C58 /* Pods-Journey-Joy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Journey-Joy-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73B39DDFDC851AC6EADB85582DD0267C /* Pods-Journey-Joy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Journey-Joy-dummy.m"; sourceTree = "<group>"; };
+		86832ACFD1B2C305CB7C4072D414C466 /* WiggleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WiggleButton.swift; path = Sources/AnimatedTabBar/TabBarButtons/WiggleButton.swift; sourceTree = "<group>"; };
+		87C33FAAF3B5F5E2C4660271932012AC /* ExyteAnimatedTabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExyteAnimatedTabBar.release.xcconfig; sourceTree = "<group>"; };
+		8DBEE96A2BFEF5B538E7858DD593FC39 /* IndentableRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndentableRect.swift; path = Sources/AnimatedTabBar/IndentableRect.swift; sourceTree = "<group>"; };
+		8DEFDFBD7C45970095BCC02CE951DD17 /* ExyteAnimatedTabBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExyteAnimatedTabBar-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ACA976560DE0B32D638BB19DA15106F3 /* Pods-Journey-Joy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Journey-Joy-umbrella.h"; sourceTree = "<group>"; };
+		B2B4B7BC5B6B88768119FEA054124D68 /* AnimatedTabbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedTabbar.swift; path = Sources/AnimatedTabBar/AnimatedTabbar.swift; sourceTree = "<group>"; };
+		B756ECE40911B0F93AFC78C135D9A87D /* ExyteAnimatedTabBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ExyteAnimatedTabBar-dummy.m"; sourceTree = "<group>"; };
+		B9A56B75EDCE653C29A040387DDBD5F7 /* DropletButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropletButton.swift; path = Sources/AnimatedTabBar/TabBarButtons/DropletButton.swift; sourceTree = "<group>"; };
+		BF1F4DC65680A507EEF476D263AE13B2 /* Pods-Journey-Joy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Journey-Joy-frameworks.sh"; sourceTree = "<group>"; };
+		C44749A42935976B88E1CDEE902B24B9 /* AnimatedTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnimatedTabBar.h; path = Sources/AnimatedTabBar.h; sourceTree = "<group>"; };
+		C78333F453134729EFAA5811A65BA20E /* ExyteAnimatedTabBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ExyteAnimatedTabBar-Info.plist"; sourceTree = "<group>"; };
+		D3D95F6000B4D5B8D850E3C57FB43E4D /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/AnimatedTabBar/Utils.swift; sourceTree = "<group>"; };
+		DF540E0886CE13C05754E893CF858033 /* Pods-Journey-Joy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Journey-Joy.release.xcconfig"; sourceTree = "<group>"; };
+		DF9E1D6384204A71A641AE15AA829563 /* Pods-Journey-Joy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Journey-Joy-Info.plist"; sourceTree = "<group>"; };
+		E8E4F55ECC95C05A939715D7B2542180 /* Pods-Journey-Joy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Journey-Joy.modulemap"; sourceTree = "<group>"; };
+		EECE05E046BA99F8BA9DF4E1B7983C2F /* Pods-Journey-Joy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Journey-Joy.debug.xcconfig"; sourceTree = "<group>"; };
+		FF512AB895454FAA0943CFF8AC5049EE /* GeometryEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeometryEffects.swift; path = Sources/AnimatedTabBar/GeometryEffects.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47A890BF39312B942EDF0DDD4F013253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E13416A850E157B27885D5D7F2C04B16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB409E1372A2963AA5B475F9CDF0F452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8E3DA9CA2621DC19E571EB39ECE080 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D496C28348A6443BF02E2FD36AFA619 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DEF3C05D226DD098C07E551DEAFDA /* ExyteAnimatedTabBar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2BC396F068AFB8695B0F93C665A92C93 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				47B9AED9908B3707CE3BCE5A32D0CBA0 /* ExyteAnimatedTabBar.modulemap */,
+				B756ECE40911B0F93AFC78C135D9A87D /* ExyteAnimatedTabBar-dummy.m */,
+				C78333F453134729EFAA5811A65BA20E /* ExyteAnimatedTabBar-Info.plist */,
+				8DEFDFBD7C45970095BCC02CE951DD17 /* ExyteAnimatedTabBar-prefix.pch */,
+				3C4C0BB8A906A16AAC3398D85442009D /* ExyteAnimatedTabBar-umbrella.h */,
+				50977B6591A12726FE2D6ADB1909C88C /* ExyteAnimatedTabBar.debug.xcconfig */,
+				87C33FAAF3B5F5E2C4660271932012AC /* ExyteAnimatedTabBar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ExyteAnimatedTabBar";
+			sourceTree = "<group>";
+		};
+		4D3DEF3C05D226DD098C07E551DEAFDA /* ExyteAnimatedTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C44749A42935976B88E1CDEE902B24B9 /* AnimatedTabBar.h */,
+				B2B4B7BC5B6B88768119FEA054124D68 /* AnimatedTabbar.swift */,
+				5B7BA879F997D6509B9793A7C4EB5A6D /* BezierPathLength.swift */,
+				26D5CB57FBF1710BBEB9670A85C125EB /* ButtonsBarLayout.swift */,
+				B9A56B75EDCE653C29A040387DDBD5F7 /* DropletButton.swift */,
+				FF512AB895454FAA0943CFF8AC5049EE /* GeometryEffects.swift */,
+				8DBEE96A2BFEF5B538E7858DD593FC39 /* IndentableRect.swift */,
+				D3D95F6000B4D5B8D850E3C57FB43E4D /* Utils.swift */,
+				86832ACFD1B2C305CB7C4072D414C466 /* WiggleButton.swift */,
+				2BC396F068AFB8695B0F93C665A92C93 /* Support Files */,
+			);
+			path = ExyteAnimatedTabBar;
+			sourceTree = "<group>";
+		};
+		56446549D5F64492A03D4CC3F767F8A5 /* Pods-Journey-Joy */ = {
+			isa = PBXGroup;
+			children = (
+				E8E4F55ECC95C05A939715D7B2542180 /* Pods-Journey-Joy.modulemap */,
+				6BED4C6E87CCB37ED545401A09BA7275 /* Pods-Journey-Joy-acknowledgements.markdown */,
+				721ED8366C6D5C1A9EBE0417FC096C58 /* Pods-Journey-Joy-acknowledgements.plist */,
+				73B39DDFDC851AC6EADB85582DD0267C /* Pods-Journey-Joy-dummy.m */,
+				BF1F4DC65680A507EEF476D263AE13B2 /* Pods-Journey-Joy-frameworks.sh */,
+				DF9E1D6384204A71A641AE15AA829563 /* Pods-Journey-Joy-Info.plist */,
+				ACA976560DE0B32D638BB19DA15106F3 /* Pods-Journey-Joy-umbrella.h */,
+				EECE05E046BA99F8BA9DF4E1B7983C2F /* Pods-Journey-Joy.debug.xcconfig */,
+				DF540E0886CE13C05754E893CF858033 /* Pods-Journey-Joy.release.xcconfig */,
+			);
+			name = "Pods-Journey-Joy";
+			path = "Target Support Files/Pods-Journey-Joy";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		857541332464DA03A1C04747D3874818 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05A6F84F196D55BADFBFC1E5462234CE /* ExyteAnimatedTabBar */,
+				263172350A972FCF75609039A05B4D1D /* Pods-Journey-Joy */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98CC8190953EF6EB026B12D0B95DFEFC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56446549D5F64492A03D4CC3F767F8A5 /* Pods-Journey-Joy */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0D496C28348A6443BF02E2FD36AFA619 /* Pods */,
+				857541332464DA03A1C04747D3874818 /* Products */,
+				98CC8190953EF6EB026B12D0B95DFEFC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6713D1AB0D53E63E3F336685110A802B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16034B33923CCD07F707323511135FDE /* Pods-Journey-Joy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A097D92A5C29044D51BC07ABF97571 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3118A2C2BD5B3093B1AB1A1B424329 /* AnimatedTabBar.h in Headers */,
+				F002873292B90885B2627B5DD25BAA0A /* ExyteAnimatedTabBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57014E474344F44445A094493230B873 /* ExyteAnimatedTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C311BDB08FB7BB8C9A9C9CF7B9CDBE /* Build configuration list for PBXNativeTarget "ExyteAnimatedTabBar" */;
+			buildPhases = (
+				72A097D92A5C29044D51BC07ABF97571 /* Headers */,
+				95D39C5147176933B9B50A9CC9C2771D /* Sources */,
+				DB409E1372A2963AA5B475F9CDF0F452 /* Frameworks */,
+				407CECD136B35AE723AB0DA57C0C3575 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExyteAnimatedTabBar;
+			productName = ExyteAnimatedTabBar;
+			productReference = 05A6F84F196D55BADFBFC1E5462234CE /* ExyteAnimatedTabBar */;
+			productType = "com.apple.product-type.framework";
+		};
+		A000DC4854336D9D70F3A7809B7A9496 /* Pods-Journey-Joy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 761E95C4212AE2942DD96E60F84A1CE3 /* Build configuration list for PBXNativeTarget "Pods-Journey-Joy" */;
+			buildPhases = (
+				6713D1AB0D53E63E3F336685110A802B /* Headers */,
+				56F52CCEC9773314177069BCF271FD31 /* Sources */,
+				47A890BF39312B942EDF0DDD4F013253 /* Frameworks */,
+				136C60D9D37DB111EB375FEAB59B7824 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E668862AAC78336F97D9AD3934FDB8A /* PBXTargetDependency */,
+			);
+			name = "Pods-Journey-Joy";
+			productName = Pods_Journey_Joy;
+			productReference = 263172350A972FCF75609039A05B4D1D /* Pods-Journey-Joy */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 857541332464DA03A1C04747D3874818 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57014E474344F44445A094493230B873 /* ExyteAnimatedTabBar */,
+				A000DC4854336D9D70F3A7809B7A9496 /* Pods-Journey-Joy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		136C60D9D37DB111EB375FEAB59B7824 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		407CECD136B35AE723AB0DA57C0C3575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56F52CCEC9773314177069BCF271FD31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A45099086F8FE3CDB3DF685C4D351C08 /* Pods-Journey-Joy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95D39C5147176933B9B50A9CC9C2771D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0955FDB7FC64095C02C588CEFFFEACAB /* AnimatedTabbar.swift in Sources */,
+				BFAC0488FAC8467BDA3B4D352DCF69CA /* BezierPathLength.swift in Sources */,
+				BB19410763BDCE8095680BB4E339200D /* ButtonsBarLayout.swift in Sources */,
+				99F9C53AB25F8262B31E5E883429B078 /* DropletButton.swift in Sources */,
+				5069AD62B40C148165130010B9831DB1 /* ExyteAnimatedTabBar-dummy.m in Sources */,
+				C6BA551874B0B0DC7BE6E09F267991B5 /* GeometryEffects.swift in Sources */,
+				CBF8C001F22A8407ADCFAA07F9BCCEB5 /* IndentableRect.swift in Sources */,
+				ABB1834F8231BFB19DF2CE9763174AE4 /* Utils.swift in Sources */,
+				9716F08327E88AC5A110961F9D92F0DC /* WiggleButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E668862AAC78336F97D9AD3934FDB8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ExyteAnimatedTabBar;
+			target = 57014E474344F44445A094493230B873 /* ExyteAnimatedTabBar */;
+			targetProxy = EAA910DD80DE0EBE4BEDB48C9196516A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B1F283704DAA86FCB08D8F60DDBC901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF540E0886CE13C05754E893CF858033 /* Pods-Journey-Joy.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Journey-Joy/Pods-Journey-Joy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Journey-Joy/Pods-Journey-Joy.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4D605A47E7E4BC72FCFE4CA46ED89F61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C33FAAF3B5F5E2C4660271932012AC /* ExyteAnimatedTabBar.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ExyteAnimatedTabBar/ExyteAnimatedTabBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExyteAnimatedTabBar/ExyteAnimatedTabBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ExyteAnimatedTabBar/ExyteAnimatedTabBar.modulemap";
+				PRODUCT_MODULE_NAME = ExyteAnimatedTabBar;
+				PRODUCT_NAME = ExyteAnimatedTabBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.7;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8CEF744EED882DD70BF1DBC4E7417C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EECE05E046BA99F8BA9DF4E1B7983C2F /* Pods-Journey-Joy.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Journey-Joy/Pods-Journey-Joy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Journey-Joy/Pods-Journey-Joy.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C918E1F348E113EC165E39B705C58E33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50977B6591A12726FE2D6ADB1909C88C /* ExyteAnimatedTabBar.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ExyteAnimatedTabBar/ExyteAnimatedTabBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExyteAnimatedTabBar/ExyteAnimatedTabBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ExyteAnimatedTabBar/ExyteAnimatedTabBar.modulemap";
+				PRODUCT_MODULE_NAME = ExyteAnimatedTabBar;
+				PRODUCT_NAME = ExyteAnimatedTabBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.7;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E873CA97BD124B21839AF13C9BE1CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46C311BDB08FB7BB8C9A9C9CF7B9CDBE /* Build configuration list for PBXNativeTarget "ExyteAnimatedTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C918E1F348E113EC165E39B705C58E33 /* Debug */,
+				4D605A47E7E4BC72FCFE4CA46ED89F61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */,
+				E873CA97BD124B21839AF13C9BE1CD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		761E95C4212AE2942DD96E60F84A1CE3 /* Build configuration list for PBXNativeTarget "Pods-Journey-Joy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CEF744EED882DD70BF1DBC4E7417C05 /* Debug */,
+				2B1F283704DAA86FCB08D8F60DDBC901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

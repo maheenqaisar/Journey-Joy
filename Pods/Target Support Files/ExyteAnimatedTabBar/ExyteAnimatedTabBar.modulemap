@@ -1,0 +1,6 @@
+framework module ExyteAnimatedTabBar {
+  umbrella header "ExyteAnimatedTabBar-umbrella.h"
+
+  export *
+  module * { export * }
+}
