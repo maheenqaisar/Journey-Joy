@@ -12,10 +12,12 @@ class FilterScreen: UIViewController, UISearchBarDelegate {
     // MARK: - Outlets
     
     @IBOutlet weak var totalNumberLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var secondView: UIView!
     @IBOutlet weak var thirdView: UIView!
+    @IBOutlet weak var fourthView: UIView!
     @IBOutlet weak var firstStack: UIStackView!
     @IBOutlet weak var secondStack: UIStackView!
     @IBOutlet weak var firstContainer: UIView!
@@ -78,6 +80,9 @@ class FilterScreen: UIViewController, UISearchBarDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(handleSelectedTourOption(_:)), name: NSNotification.Name("SelectedTourOption"), object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(updateTotalNumberLabel(_:)), name: Notification.Name("TotalNumberUpdated"), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleSelectedDate(_:)), name: Notification.Name("SelectedDate"), object: nil)
+           
     }
     
     deinit {
@@ -87,8 +92,9 @@ class FilterScreen: UIViewController, UISearchBarDelegate {
     // MARK: - Notification Handling
     
     @objc func updateTotalNumberLabel(_ totalNumber: Int) {
-        DispatchQueue.main.async {
-            self.totalNumberLabel.text = "\(totalNumber) - Persons"
+        DispatchQueue.main.async { [self] in
+            totalNumberLabel.text = "\(totalNumber) - Persons"
+            fourthView.isHidden = false
         }
     }
     
@@ -111,6 +117,15 @@ class FilterScreen: UIViewController, UISearchBarDelegate {
             }
         }
     }
+    
+    @objc func handleSelectedDate(_ notification: Notification) {
+            if let selectedDate = notification.userInfo?["selectedDate"] as? Date {
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "d MMM"
+                let dateString = dateFormatter.string(from: selectedDate)
+                dateLabel.text = dateString
+            }
+        }
     
     // MARK: - Search Bar Delegate
     
@@ -241,6 +256,7 @@ class FilterScreen: UIViewController, UISearchBarDelegate {
                 }
             }
         }
+        fourthView.isHidden = true
     }
     
     // MARK: - Navigation Bar

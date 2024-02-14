@@ -54,27 +54,15 @@ class DetailScreen: UIViewController, UICollectionViewDataSource, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedDetailTour = detailTour[indexPath.item]
-
-        // Assuming DetailViewController is the storyboard ID of your detail view controller
-        if let detailViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainDetailScreen") as? MainDetailScreen {
-            // Pass the selected data to the detail view controller
+        if let detailViewController = storyboard?.instantiateViewController(withIdentifier: "MainDetailScreen") as? MainDetailScreen {
             detailViewController.detailTour = selectedDetailTour
-
-            // Wrap the detail view controller in a navigation controller
-            let navigationController = UINavigationController(rootViewController: detailViewController)
-
-            // Set the presentation style to full screen
-            navigationController.modalPresentationStyle = .fullScreen
-
-            // Present the navigation controller
-            self.present(navigationController, animated: true, completion: nil)
+            navigationController?.pushViewController(detailViewController, animated: true)
         }
     }
 
-
     @IBAction func gotobackfilter(_ sender: Any) {
         // Assuming FilterScreen is the storyboard ID of your FilterScreen ViewController
-        if let filterScreen = self.storyboard?.instantiateViewController(withIdentifier: "FilterScreen") {
+        if self.storyboard?.instantiateViewController(withIdentifier: "FilterScreen") is FilterScreen {
             //filterScreen.hidesBottomBarWhenPushed = true
             //filterScreen.navigationController?.isNavigationBarHidden = false
             self.navigationController?.popViewController(animated: true)

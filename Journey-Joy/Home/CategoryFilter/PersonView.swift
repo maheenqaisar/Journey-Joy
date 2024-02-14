@@ -54,7 +54,6 @@ class PersonView: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.minusButtonAction = { [weak self] in
             self?.minusButtonTapped(indexPath: indexPath)
         }
-
         return cell
     }
 

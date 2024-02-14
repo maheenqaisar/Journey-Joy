@@ -8,11 +8,12 @@
 import UIKit
 
 class BookingDetailScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
     @IBOutlet weak var paymenttableView: UITableView!
     @IBOutlet private weak var phoneaddedBtn: UIButton!
     
     let paymentData = ["Debit Card", "Credit Card", "JazzCash", "Easypaisa", "SadaPay", "NayaPay"]
+    
     var selectedPaymentIndex: Int?
     
     override func viewDidLoad() {
@@ -53,10 +54,16 @@ class BookingDetailScreen: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     @IBAction func phoneAddedBtn(_ sender: Any) {
-        let nextScreenVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PhoneNumberScreen") as! PhoneNumberScreen
-        navigationController?.pushViewController(nextScreenVC, animated: true)
+         let nextScreenVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PhoneNumberScreen") as! PhoneNumberScreen
+         navigationController?.pushViewController(nextScreenVC, animated: true)
+        updateButton()
+     }
+    
+    func updateButton() {
+        // Update your button here, change icon and color
+        phoneaddedBtn.setImage(UIImage(systemName: "checkmark.seal.fill"), for: .normal)
+        phoneaddedBtn.tintColor = .systemGreen
     }
-
 }
 
 class PaymentTableViewCell: UITableViewCell {
@@ -65,7 +72,7 @@ class PaymentTableViewCell: UITableViewCell {
 
     // Method to configure the circle image based on the selected state
     func configureCircleImage() {
-        circleImageView.image = UIImage(systemName: "circle.inset.filled")
+        circleImageView.image = UIImage(systemName: "circle.dashed.inset.filled")
     }
 
     // Method to deselect the circle image

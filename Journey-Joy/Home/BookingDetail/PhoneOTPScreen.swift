@@ -20,6 +20,7 @@ class PhoneOTPScreen: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var resendLbl: UILabel!
     @IBOutlet weak var phoneNumberLabel: UILabel!
     
+    weak var delegate: PhoneOTPScreenDelegate?
     var phoneNumber: String?
     var countryCode: String?
     
@@ -111,12 +112,13 @@ class PhoneOTPScreen: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction private func nextProceed(_ sender: Any) {
-//        if let myNavigationController = self.navigationController {
-//            myNavigationController.popToRootViewController(animated: true)
-//        }
-        print("Worked")
+        if let myNavigationController = navigationController {
+            myNavigationController.popToRootViewController(animated: true)
+            // Call delegate method to update button in BookingDetailScreen
+            delegate?.didTapButtonInPhoneOTPScreen()
+        }
     }
-
+    
     // MARK: - Text Field Change
 
     @objc private func textDidChange(textField: UITextField) {

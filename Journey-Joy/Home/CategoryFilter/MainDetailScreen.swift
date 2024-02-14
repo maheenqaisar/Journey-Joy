@@ -24,6 +24,7 @@ class MainDetailScreen: UIViewController {
         super.viewDidLoad()
         // To hide the navigation bar on a specific view controller
         navigationController?.setNavigationBarHidden(false, animated: true)
+        self.tabBarController?.tabBar.isHidden = true
     }
 
     override func viewDidLoad() {
@@ -87,14 +88,23 @@ class MainDetailScreen: UIViewController {
         imageCountLabel.text = "\(currentImageIndex + 1)/\(imageArray.count)"
     }
     
-    @IBAction func gotoBack(_ sender: Any) {
-        if let presentingViewController = self.presentingViewController {
-            // Dismiss the current view controller if it was presented modally
-            presentingViewController.dismiss(animated: true, completion: nil)
-        } else {
-            // Pop the current view controller if it's in a navigation stack
-            self.navigationController?.popViewController(animated: true)
+    @IBAction func gotoNext(_ sender: Any) {
+        // Instantiate the destination view controller
+        guard let filterScreen = self.storyboard?.instantiateViewController(withIdentifier: "BookingMainScreen") as? BookingMainScreen else {
+            return
         }
+        self.navigationController?.pushViewController(filterScreen, animated: true)
+        
     }
+    
+//    @IBAction func gotoBack(_ sender: Any) {
+//        if let presentingViewController = self.presentingViewController {
+//            // Dismiss the current view controller if it was presented modally
+//            presentingViewController.dismiss(animated: true, completion: nil)
+//        } else {
+//            // Pop the current view controller if it's in a navigation stack
+//            self.navigationController?.popViewController(animated: true)
+//        }
+//    }
 
 }

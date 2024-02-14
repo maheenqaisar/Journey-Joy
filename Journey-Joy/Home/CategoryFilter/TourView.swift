@@ -12,6 +12,7 @@ class TourView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     private let tourOptions = ["Mountain Bliss", "City Lights", "Coastal Retreat", "Desert Mirage", "River Adventure", "Cultural Fusion", "Heritage Trail", "Wildlife Safari", "Mango Delight", "Hidden Valleys"]
+    
     private var filteredTourOptions: [String] = []
     
     private let tourCellIdentifier = "TourCell"

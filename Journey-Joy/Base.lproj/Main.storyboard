@@ -1876,7 +1876,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJ2-Jo-5c3">
-                                <rect key="frame" x="10" y="103" width="373" height="90"/>
+                                <rect key="frame" x="10" y="59" width="373" height="90"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WOg-k9-CAL">
                                         <rect key="frame" x="5" y="10" width="363" height="70"/>
@@ -1903,13 +1903,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adventure Hunters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFJ-Ze-qFe">
-                                                        <rect key="frame" x="0.0" y="23.333333333333343" width="242" height="23.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="23.333333333333329" width="242" height="23.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                                         <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="v0E-94-nL9" userLabel="Reviews-Stack">
-                                                        <rect key="frame" x="0.0" y="46.666666666666657" width="242" height="23.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="46.666666666666671" width="242" height="23.333333333333329"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wnz-Yo-SgI">
                                                                 <rect key="frame" x="0.0" y="1.6666666666666643" width="20" height="19.333333333333336"/>
@@ -1951,7 +1951,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Po3-l8-At8">
-                                <rect key="frame" x="0.0" y="203" width="393" height="697"/>
+                                <rect key="frame" x="0.0" y="159" width="393" height="741"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
@@ -2401,7 +2401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBV-D1-N7K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="276" y="4244"/>
+            <point key="canvasLocation" x="645" y="3572"/>
         </scene>
         <!--Detail Screen-->
         <scene sceneID="ViM-wp-K9r">
@@ -2661,14 +2661,18 @@
                             <constraint firstItem="MHL-Wc-Ana" firstAttribute="top" secondItem="FvH-Kw-04X" secondAttribute="bottom" constant="20" id="t0k-54-ZDV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" style="editor" id="teg-Au-ltS"/>
+                    <navigationItem key="navigationItem" style="browser" id="teg-Au-ltS">
+                        <barButtonItem key="backBarButtonItem" title=" " id="FbE-9u-aGc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailCollectionView" destination="MHL-Wc-Ana" id="e9R-Sr-YPZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kyw-fA-v4u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149" y="3243"/>
+            <point key="canvasLocation" x="-1013" y="3572"/>
         </scene>
         <!--Main Detail Screen-->
         <scene sceneID="8FW-Vm-pHW">
@@ -3132,22 +3136,13 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="2NR-mg-wIv">
                             <color key="tintColor" red="0.83137254900000002" green="0.0" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
-                        <barButtonItem key="leftBarButtonItem" id="9BY-6B-vB1">
-                            <imageReference key="image" image="chevron.backward.circle.fill" catalog="system" symbolScale="large"/>
-                            <imageReference key="landscapeImage" image="chevron.backward.circle.fill" catalog="system" symbolScale="large"/>
-                            <imageReference key="largeContentSizeImage" image="chevron.backward.circle.fill" catalog="system" symbolScale="large"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="gotoBack:" destination="Ji1-3N-Y8o" id="FiB-SG-vjn"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="s5p-Bk-0MW">
                             <imageReference key="image" image="heart.circle.fill" catalog="system" symbolScale="large" variableValue="0.80000000000000004"/>
                             <imageReference key="landscapeImage" image="heart.circle.fill" catalog="system" symbolScale="large"/>
                             <imageReference key="largeContentSizeImage" image="heart.circle.fill" catalog="system" symbolScale="large"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="idd-SN-hp7" kind="show" id="ric-CV-7Sk"/>
+                                <action selector="gotoNext:" destination="Ji1-3N-Y8o" id="nJo-d5-Vhk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -3163,30 +3158,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbe-Q2-Jmn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="3244"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Dv4-7f-vzX">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W4I-1c-4Ty" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s7h-1f-WAw">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Ji1-3N-Y8o" kind="relationship" relationship="rootViewController" id="Th4-ox-7eA"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jpR-9u-wDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="911" y="3244"/>
+            <point key="canvasLocation" x="-175" y="3554"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zco-Va-XjF">
             <objects>
-                <navigationController storyboardIdentifier="CheckedNav" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AtU-Rv-maa" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AtU-Rv-maa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1MR-vG-7sD">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -3199,7 +3176,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Qp-pE-zZM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050" y="4236"/>
+            <point key="canvasLocation" x="1379" y="3572"/>
         </scene>
         <!--Phone Number Screen-->
         <scene sceneID="Z7m-Zv-kal">
@@ -3336,7 +3313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hv4-dh-bkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2622" y="4294"/>
+            <point key="canvasLocation" x="2990" y="3622"/>
         </scene>
         <!--Country Code-->
         <scene sceneID="7ti-jw-iNP">
@@ -3421,7 +3398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6VS-UC-OEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3407" y="4294"/>
+            <point key="canvasLocation" x="3776" y="3622"/>
         </scene>
         <!--Where to? -->
         <scene sceneID="Amy-9G-nFQ">
@@ -3752,9 +3729,11 @@
                     </navigationItem>
                     <size key="freeformSize" width="393" height="1250"/>
                     <connections>
+                        <outlet property="dateLabel" destination="vLX-Kc-zfS" id="hMO-eY-cQk"/>
                         <outlet property="firstContainer" destination="Vie-8V-awB" id="tau-7G-aFv"/>
                         <outlet property="firstStack" destination="No6-QQ-clq" id="4io-0K-RBg"/>
                         <outlet property="firstView" destination="3Rq-Ht-LQV" id="tUl-Q6-Ijh"/>
+                        <outlet property="fourthView" destination="Bxy-7K-1bS" id="gxv-yz-29r"/>
                         <outlet property="searchBar" destination="Xja-bk-8II" id="y1J-z4-zUq"/>
                         <outlet property="secondContainer" destination="EXW-E1-jot" id="qna-kz-q2G"/>
                         <outlet property="secondStack" destination="Bp7-hl-xUO" id="Skm-8N-bh5"/>
@@ -3766,7 +3745,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mC-Y4-FyI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-738.16793893129773" y="3242.9577464788736"/>
+            <point key="canvasLocation" x="-1860" y="3506"/>
         </scene>
         <!--Tour View-->
         <scene sceneID="PTT-Dm-SR2">
@@ -3847,7 +3826,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tvl-kT-91J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1114" y="3973"/>
+            <point key="canvasLocation" x="-2237" y="4235"/>
         </scene>
         <!--Calender View-->
         <scene sceneID="0Wh-7E-LDZ">
@@ -3867,48 +3846,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="Axx-u3-29i" customClass="CustomDatePicker" customModule="Journey_Joy" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="63" width="333" height="334"/>
+                                <rect key="frame" x="0.0" y="63" width="333" height="343.66666666666669"/>
                                 <color key="tintColor" red="0.83137254900000002" green="0.0" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </datePicker>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Y7m-pU-jsO">
-                                <rect key="frame" x="5" y="425" width="323" height="40"/>
+                                <rect key="frame" x="5" y="434.66666666666669" width="323" height="30.333333333333314"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6y5-3O-Eu8">
-                                        <rect key="frame" x="0.0" y="0.0" width="64" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="p36-Kq-d8N"/>
-                                        </constraints>
-                                        <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Back">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="18" name="AvenirNext-Medium"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        <integer key="NSUnderline" value="1"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeB-Hm-Vud">
-                                        <rect key="frame" x="187" y="0.0" width="136" height="40"/>
-                                        <color key="backgroundColor" red="0.83137254900000002" green="0.0" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="oWp-VG-Wr0"/>
-                                            <constraint firstAttribute="height" constant="40" id="qui-9L-JVM"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Next"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="18"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 Jan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axn-cg-stj">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="30.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                        <color key="textColor" red="0.83137254900000002" green="0.0" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -3927,10 +3876,14 @@
                             <constraint firstAttribute="trailing" secondItem="Axx-u3-29i" secondAttribute="trailing" id="xou-KF-TJC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Axx-u3-29i" id="g4b-59-Zuc"/>
+                        <outlet property="lblDate" destination="Axn-cg-stj" id="00Y-Ar-gbW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gvt-Ej-jSy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-740" y="4294"/>
+            <point key="canvasLocation" x="-1863" y="4556"/>
         </scene>
         <!--Person View-->
         <scene sceneID="wXB-e7-4Zs">
@@ -4060,7 +4013,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iln-3r-agl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-347.32824427480915" y="3941.5492957746483"/>
+            <point key="canvasLocation" x="-1469" y="4204"/>
         </scene>
         <!--Request to book-->
         <scene sceneID="M2y-5o-mfb">
@@ -4362,29 +4315,19 @@
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
-                                                            <button contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7iy-pa-uBs">
+                                                            <button contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7iy-pa-uBs">
                                                                 <rect key="frame" x="282" y="34" width="71" height="32"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="71" id="Sk5-am-TlE"/>
                                                                     <constraint firstAttribute="height" constant="32" id="ruO-Jp-4ON"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
-                                                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                                                <color key="tintColor" red="0.83137254900000002" green="0.0" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                <state key="normal" title="Add">
+                                                                <state key="normal">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
                                                                 </state>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                        <real key="value" value="0.80000000000000004"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="12"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="phoneAddedBtn:" destination="WLC-Ro-47v" eventType="touchUpInside" id="XAV-c8-EmO"/>
                                                                 </connections>
@@ -4589,6 +4532,13 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="Dtr-P5-tXd">
                             <color key="tintColor" red="0.83137254900000002" green="0.0" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" id="hiE-Ty-RwJ">
+                            <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" red="0.83137254900000002" green="0.0" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="gotoBack:" destination="LxD-Ab-fpy" id="q8S-Ov-JMD"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="393" height="1200"/>
                     <connections>
@@ -4597,8 +4547,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLr-MW-f0I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="LxD-Ab-fpy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1914" y="4244"/>
+            <point key="canvasLocation" x="2283" y="3572"/>
         </scene>
         <!--PhoneOTP Screen-->
         <scene sceneID="Tg8-c0-3VD">
@@ -4814,7 +4765,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTE-xF-jkY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4169" y="4294"/>
+            <point key="canvasLocation" x="4538" y="3622"/>
         </scene>
     </scenes>
     <resources>
@@ -4827,7 +4778,7 @@
         <image name="arrow.right" catalog="system" width="128" height="95"/>
         <image name="bed" width="30" height="30"/>
         <image name="calendar.badge.checkmark" catalog="system" width="128" height="109"/>
-        <image name="chevron.backward.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="circle" catalog="system" width="128" height="123"/>
         <image name="circle.dashed.inset.filled" catalog="system" width="128" height="123"/>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="112"/>
@@ -4845,6 +4796,7 @@
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="phone.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="profile" width="1024" height="703"/>
         <image name="restaurant" width="28" height="28"/>

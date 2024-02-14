@@ -96,9 +96,27 @@ class BookingMainScreen: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     @IBAction func nextPayBtn(_ sender: Any) {
-        let nextScreenVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BookingDetailScreen") as! BookingDetailScreen
-        navigationController?.pushViewController(nextScreenVC, animated: true)
+//        let nextScreenVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BookingDetailScreen") as! BookingDetailScreen
+//        navigationController?.pushViewController(nextScreenVC, animated: true)
+//        
+//        
+        if let detailViewController = self.storyboard?.instantiateViewController(withIdentifier: "BookingDetailScreen") as? BookingDetailScreen {
+            let navigationController = UINavigationController(rootViewController: detailViewController)
+            navigationController.modalPresentationStyle = .fullScreen
+            navigationController.modalTransitionStyle = .crossDissolve
+            self.present(navigationController, animated: true, completion: nil)
+      
+        }
     }
+    
+    @IBAction func gotoBack(_ sender: Any) {
+        if let presentingViewController = self.presentingViewController {
+            presentingViewController.dismiss(animated: true, completion: nil)
+        } else {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
+
 }
 
 // MARK: - Cell Classes
@@ -130,7 +148,7 @@ class ThirdTableViewCell: UITableViewCell {
     }
 
     func configureCircleImage() {
-        circleImageView.image = UIImage(systemName: "circle.inset.filled")
+        circleImageView.image = UIImage(systemName: "circle.dashed.inset.filled")
     }
 
     // Method to deselect the circle image
@@ -143,7 +161,7 @@ class FourthTableViewCell: UITableViewCell {
     @IBOutlet weak var circleImageView: UIImageView!
 
     func configureCircleImage() {
-        circleImageView.image = UIImage(systemName: "circle.inset.filled")
+        circleImageView.image = UIImage(systemName: "circle.dashed.inset.filled")
     }
 
     // Method to deselect the circle image

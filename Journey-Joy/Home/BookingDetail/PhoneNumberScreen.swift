@@ -7,7 +7,11 @@
 
 import UIKit
 
-class PhoneNumberScreen: UIViewController, UITextFieldDelegate {
+protocol PhoneOTPScreenDelegate: AnyObject {
+    func didTapButtonInPhoneOTPScreen()
+}
+
+class PhoneNumberScreen: UIViewController, UITextFieldDelegate, PhoneOTPScreenDelegate {
 
     @IBOutlet weak var countryCodeButton: UIButton!
     @IBOutlet weak var numberField: UITextField!
@@ -35,6 +39,10 @@ class PhoneNumberScreen: UIViewController, UITextFieldDelegate {
         } else {
             countryCodeButton.setTitle("+1", for: .normal)
         }
+    }
+    
+    func didTapButtonInPhoneOTPScreen() {
+        print("Button tapped on PhoneOTPScreen")
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -71,6 +79,8 @@ class PhoneNumberScreen: UIViewController, UITextFieldDelegate {
         let nextScreenVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PhoneOTPScreen") as! PhoneOTPScreen
         nextScreenVC.phoneNumber = phoneNumber
         nextScreenVC.countryCode = selectedCountryCode
+        // Set self as delegate
+        nextScreenVC.delegate = self
         navigationController?.pushViewController(nextScreenVC, animated: true)
     }
     
