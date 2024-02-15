@@ -73,6 +73,8 @@
 		48B1C00D2B7E27AA000BEE23 /* IQTextFieldViewListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1BFE02B7E27AA000BEE23 /* IQTextFieldViewListener.swift */; };
 		48B1C00E2B7E27AA000BEE23 /* IQTextFieldViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1BFE22B7E27AA000BEE23 /* IQTextFieldViewInfo.swift */; };
 		48B1C00F2B7E27AA000BEE23 /* IQKeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1BFE32B7E27AA000BEE23 /* IQKeyboardInfo.swift */; };
+		48B1C0132B7E2BE8000BEE23 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48B1C0112B7E2BE7000BEE23 /* Rubik-VariableFont_wght.ttf */; };
+		48B1C0142B7E2BE8000BEE23 /* Rubik-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48B1C0122B7E2BE7000BEE23 /* Rubik-Italic-VariableFont_wght.ttf */; };
 		48D8BA722B7963E800D59AF1 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D8BA712B7963E800D59AF1 /* PersonView.swift */; };
 		48D8BA742B79640400D59AF1 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D8BA732B79640400D59AF1 /* CalenderView.swift */; };
 		48D8BA762B79641900D59AF1 /* TourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D8BA752B79641900D59AF1 /* TourView.swift */; };
@@ -207,6 +209,8 @@
 		48B1BFE02B7E27AA000BEE23 /* IQTextFieldViewListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextFieldViewListener.swift; sourceTree = "<group>"; };
 		48B1BFE22B7E27AA000BEE23 /* IQTextFieldViewInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextFieldViewInfo.swift; sourceTree = "<group>"; };
 		48B1BFE32B7E27AA000BEE23 /* IQKeyboardInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardInfo.swift; sourceTree = "<group>"; };
+		48B1C0112B7E2BE7000BEE23 /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		48B1C0122B7E2BE7000BEE23 /* Rubik-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		48D8BA712B7963E800D59AF1 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		48D8BA732B79640400D59AF1 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
 		48D8BA752B79641900D59AF1 /* TourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourView.swift; sourceTree = "<group>"; };
@@ -448,6 +452,15 @@
 			path = Info;
 			sourceTree = "<group>";
 		};
+		48B1C0102B7E2B62000BEE23 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				48B1C0122B7E2BE7000BEE23 /* Rubik-Italic-VariableFont_wght.ttf */,
+				48B1C0112B7E2BE7000BEE23 /* Rubik-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		48D8BA7B2B7A4DB900D59AF1 /* BookingDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -548,6 +561,7 @@
 			isa = PBXGroup;
 			children = (
 				48B1BFAC2B7E27AA000BEE23 /* IQKeyboardManagerSwift */,
+				48B1C0102B7E2B62000BEE23 /* Fonts */,
 				48E3D32E2B1E4DA9003D2A62 /* Support */,
 				48E3D2D32B1E4DA4003D2A62 /* Helper + Extention */,
 				48D95A1B2B6FFF6500DB2837 /* CollectionCell */,
@@ -749,7 +763,9 @@
 				48E3D2C12B1E4D4B003D2A62 /* LaunchScreen.storyboard in Resources */,
 				48E3D2BE2B1E4D4B003D2A62 /* Assets.xcassets in Resources */,
 				48B1C0022B7E27AA000BEE23 /* PrivacyInfo.xcprivacy in Resources */,
+				48B1C0142B7E2BE8000BEE23 /* Rubik-Italic-VariableFont_wght.ttf in Resources */,
 				48E3D2BC2B1E4D49003D2A62 /* Main.storyboard in Resources */,
+				48B1C0132B7E2BE8000BEE23 /* Rubik-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
