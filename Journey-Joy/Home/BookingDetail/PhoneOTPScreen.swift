@@ -87,7 +87,7 @@ class PhoneOTPScreen: UIViewController, UITextFieldDelegate {
         } else {
             timer?.invalidate()
             timerBtn.setTitle("Send Again", for: .normal)
-            resendLbl.text = "Didn't get code."
+            resendLbl.text = "Didn't get code?"
         }
     }
 
