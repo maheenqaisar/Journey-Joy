@@ -68,12 +68,6 @@ class CustomSegmentedControl: UIView {
             }
         }
     }
-    func addBottomBorderWithColor(color: UIColor, height: CGFloat) {
-        let border = CALayer()
-        border.backgroundColor = color.cgColor
-        border.frame = CGRect(x: 0, y: self.frame.size.height - height, width: self.frame.size.width, height: height)
-        self.layer.addSublayer(border)
-    }
 }
 
 extension CustomSegmentedControl {
@@ -81,12 +75,23 @@ extension CustomSegmentedControl {
         createButton()
         configStackView()
     }
-
+    
     private func configStackView() {
         let stack = UIStackView(arrangedSubviews: buttons)
         stack.axis = .horizontal
         stack.alignment = .fill
         stack.distribution = .fillEqually
+        
+        // Add border view
+        let borderView = UIView()
+        borderView.backgroundColor = .systemGray2
+        stack.addSubview(borderView)
+        borderView.translatesAutoresizingMaskIntoConstraints = false
+        borderView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        borderView.bottomAnchor.constraint(equalTo: stack.bottomAnchor).isActive = true
+        borderView.leadingAnchor.constraint(equalTo: stack.leadingAnchor).isActive = true
+        borderView.trailingAnchor.constraint(equalTo: stack.trailingAnchor).isActive = true
+
         addSubview(stack)
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
@@ -94,6 +99,7 @@ extension CustomSegmentedControl {
         stack.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         stack.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
     }
+
 
     private func createButton() {
         buttons = [UIButton]()
@@ -174,7 +180,7 @@ extension CustomSegmentedControl {
                     bottomBorder.leadingAnchor.constraint(equalTo: button.leadingAnchor),
                     bottomBorder.trailingAnchor.constraint(equalTo: button.trailingAnchor),
                     bottomBorder.bottomAnchor.constraint(equalTo: button.bottomAnchor),
-                    bottomBorder.heightAnchor.constraint(equalToConstant: 2)
+                    bottomBorder.heightAnchor.constraint(equalToConstant: 3)
                 ])
             } else {
                 let imageView = button.subviews.compactMap { $0 as? UIStackView }.first?.arrangedSubviews.first as? UIImageView

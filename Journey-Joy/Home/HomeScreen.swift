@@ -31,8 +31,6 @@ class HomeScreen: UIViewController, UICollectionViewDelegate, UICollectionViewDa
                 ("Offers", UIImage(systemName: "l.joystick.tilt.right") ?? UIImage()),
             ]
             interfaceSegmented.setSegmentData(segmentData: segmentData)
-            interfaceSegmented.addBottomBorderWithColor(color: UIColor.secondarySystemBackground, height: 1.0)
-            
         }
     }
 
@@ -74,7 +72,6 @@ class HomeScreen: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         // Timer Setup for Automatic Animation
         startTimer()
         interfaceSegmented.delegate = self
-      
     }
     
     func change(to index: Int) {

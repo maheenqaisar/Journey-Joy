@@ -93,7 +93,7 @@
 		48E3D3272B1E4DA4003D2A62 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E3D2FA2B1E4DA4003D2A62 /* UserDefaults.swift */; };
 		48E3D3282B1E4DA4003D2A62 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E3D2FB2B1E4DA4003D2A62 /* UIViewController.swift */; };
 		48E46F452B20A91F00EA3414 /* GuestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E46F442B20A91F00EA3414 /* GuestScreen.swift */; };
-		48E63EEE2B4ECA0D0068A8C9 /* ShadowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E63EED2B4ECA0D0068A8C9 /* ShadowedView.swift */; };
+		48E63EEE2B4ECA0D0068A8C9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E63EED2B4ECA0D0068A8C9 /* UIView.swift */; };
 		48E63F1D2B4ED04D0068A8C9 /* setMultiplierConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E63EEF2B4ED04A0068A8C9 /* setMultiplierConstraint.swift */; };
 		48E63F1E2B4ED04D0068A8C9 /* Check Phone Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E63EF02B4ED04A0068A8C9 /* Check Phone Number.swift */; };
 		48E63F1F2B4ED04D0068A8C9 /* StatusBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E63EF12B4ED04A0068A8C9 /* StatusBarColor.swift */; };
@@ -231,7 +231,7 @@
 		48E3D2FA2B1E4DA4003D2A62 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		48E3D2FB2B1E4DA4003D2A62 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		48E46F442B20A91F00EA3414 /* GuestScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestScreen.swift; sourceTree = "<group>"; };
-		48E63EED2B4ECA0D0068A8C9 /* ShadowedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowedView.swift; sourceTree = "<group>"; };
+		48E63EED2B4ECA0D0068A8C9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		48E63EEF2B4ED04A0068A8C9 /* setMultiplierConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = setMultiplierConstraint.swift; sourceTree = "<group>"; };
 		48E63EF02B4ED04A0068A8C9 /* Check Phone Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Check Phone Number.swift"; sourceTree = "<group>"; };
 		48E63EF12B4ED04A0068A8C9 /* StatusBarColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarColor.swift; sourceTree = "<group>"; };
@@ -658,7 +658,7 @@
 				48E63F142B4ED04C0068A8C9 /* textView Padding.swift */,
 				48E63F1B2B4ED04C0068A8C9 /* ValidEmail.swift */,
 				483A33752B449A53009F9162 /* UIButton.swift */,
-				48E63EED2B4ECA0D0068A8C9 /* ShadowedView.swift */,
+				48E63EED2B4ECA0D0068A8C9 /* UIView.swift */,
 				48E3D2FA2B1E4DA4003D2A62 /* UserDefaults.swift */,
 				48E3D2FB2B1E4DA4003D2A62 /* UIViewController.swift */,
 			);
@@ -822,7 +822,7 @@
 				48B1C0062B7E27AA000BEE23 /* UIImage+NextPrevious.swift in Sources */,
 				48E63F1D2B4ED04D0068A8C9 /* setMultiplierConstraint.swift in Sources */,
 				48B1BFF42B7E27AA000BEE23 /* IQKeyboardManagerConstants.swift in Sources */,
-				48E63EEE2B4ECA0D0068A8C9 /* ShadowedView.swift in Sources */,
+				48E63EEE2B4ECA0D0068A8C9 /* UIView.swift in Sources */,
 				48E63F422B4ED04D0068A8C9 /* textView Padding.swift in Sources */,
 				48E63F292B4ED04D0068A8C9 /* Download Image.swift in Sources */,
 				48B1BFEF2B7E27AA000BEE23 /* IQBarButtonItem.swift in Sources */,
