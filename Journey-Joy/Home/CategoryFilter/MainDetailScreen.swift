@@ -7,11 +7,13 @@
 
 import UIKit
 
-class MainDetailScreen: UIViewController {
+class MainDetailScreen: UIViewController, UITableViewDataSource, UITableViewDelegate  {
 
+    @IBOutlet weak var faqstableView: UITableView!
     @IBOutlet weak var imageCountLabel: UILabel!
     @IBOutlet weak var tourImage: UIImageView!
     
+    @IBOutlet weak var organizationView: UIView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var subtitleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
@@ -21,8 +23,7 @@ class MainDetailScreen: UIViewController {
     var currentImageIndex: Int = 0
 
     override func viewWillAppear(_ animated: Bool) {
-        super.viewDidLoad()
-        // To hide the navigation bar on a specific view controller
+        super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
         self.tabBarController?.tabBar.isHidden = true
     }
@@ -30,14 +31,11 @@ class MainDetailScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Update UI with the selected detail tour data
         if let detailTour = detailTour {
             titleLabel.text = detailTour.title
             subtitleLabel.text = detailTour.subtitle
             descriptionLabel.text = detailTour.description
         }
-        
-        // Initialize your image array with 5 images
         imageArray = [#imageLiteral(resourceName: "slide-one"), #imageLiteral(resourceName: "slide-three"), #imageLiteral(resourceName: "slide-five"), #imageLiteral(resourceName: "slide-two"), #imageLiteral(resourceName: "slide-four")]
 
         // Set the initial image without animation
@@ -106,5 +104,31 @@ class MainDetailScreen: UIViewController {
 //            self.navigationController?.popViewController(animated: true)
 //        }
 //    }
+    
+    // MARK: - UITableViewDataSource
+       
+       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+           return faqsArray.count
+       }
+       
+       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+           let cell = tableView.dequeueReusableCell(withIdentifier: "FAQSTableViewCell", for: indexPath) as! FAQSTableViewCell
+           let ques = faqsArray[indexPath.row]
+           cell.faqsNameLabel.text = ques.name
+           cell.accessoryType = .disclosureIndicator
+           return cell
+       }
+       
+       // MARK: - UITableViewDelegate
+       
+       func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           let selectedItem = faqsArray[indexPath.row] // Retrieve selected item
+           let storyboard = UIStoryboard(name: "FAQS", bundle: nil)
+           let nextVC = storyboard.instantiateViewController(withIdentifier: "FAQSScreen") as! FAQSScreen
+           nextVC.selectedIndex = indexPath.row + 1
+           nextVC.navigationItem.title = selectedItem.name
+           navigationController?.pushViewController(nextVC, animated: true)
+       }
+
 
 }

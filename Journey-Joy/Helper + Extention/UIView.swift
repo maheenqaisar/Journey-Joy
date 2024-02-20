@@ -7,11 +7,11 @@
 
 import UIKit
 
-extension UIView {
-    func addBottomBorderWithColor(color: UIColor, width: CGFloat) {
-        let border = CALayer()
-        border.backgroundColor = color.cgColor
-        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width: self.frame.size.width, height: width)
-        self.layer.addSublayer(border)
-    }
-}
+//extension UIView {
+//    func addTopBorder(withColor color: UIColor, thickness: CGFloat) {
+//        let border = CALayer()
+//        border.backgroundColor = color.cgColor
+//        border.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: thickness)
+//        self.layer.addSublayer(border)
+//    }
+//}

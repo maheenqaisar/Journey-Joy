@@ -13,6 +13,10 @@
 		484273D52B7AD154005E5308 /* CountryCodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484273D42B7AD154005E5308 /* CountryCodeScreen.swift */; };
 		484273D72B7AD27E005E5308 /* CountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484273D62B7AD27E005E5308 /* CountryCode.swift */; };
 		484273D92B7B871E005E5308 /* PhoneOTPScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484273D82B7B871E005E5308 /* PhoneOTPScreen.swift */; };
+		484B61422B8536FF0051DDDA /* FAQS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B61412B8536FF0051DDDA /* FAQS.swift */; };
+		484B61442B8537590051DDDA /* FAQSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B61432B8537590051DDDA /* FAQSTableViewCell.swift */; };
+		484B61462B8537B30051DDDA /* FAQS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484B61452B8537B30051DDDA /* FAQS.storyboard */; };
+		484B61482B8537FA0051DDDA /* FAQSScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B61472B8537FA0051DDDA /* FAQSScreen.swift */; };
 		485697152B2214510006AFAC /* OTPScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485697142B2214510006AFAC /* OTPScreen.swift */; };
 		48613B302B2103FA005C732F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48613B2F2B2103FA005C732F /* LoginScreen.swift */; };
 		487291332B5AB5D0002392C9 /* FilterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487291322B5AB5D0002392C9 /* FilterScreen.swift */; };
@@ -148,6 +152,10 @@
 		484273D42B7AD154005E5308 /* CountryCodeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCodeScreen.swift; sourceTree = "<group>"; };
 		484273D62B7AD27E005E5308 /* CountryCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCode.swift; sourceTree = "<group>"; };
 		484273D82B7B871E005E5308 /* PhoneOTPScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneOTPScreen.swift; sourceTree = "<group>"; };
+		484B61412B8536FF0051DDDA /* FAQS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQS.swift; sourceTree = "<group>"; };
+		484B61432B8537590051DDDA /* FAQSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQSTableViewCell.swift; sourceTree = "<group>"; };
+		484B61452B8537B30051DDDA /* FAQS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FAQS.storyboard; sourceTree = "<group>"; };
+		484B61472B8537FA0051DDDA /* FAQSScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQSScreen.swift; sourceTree = "<group>"; };
 		485697142B2214510006AFAC /* OTPScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPScreen.swift; sourceTree = "<group>"; };
 		48613B2F2B2103FA005C732F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		487291322B5AB5D0002392C9 /* FilterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterScreen.swift; sourceTree = "<group>"; };
@@ -469,6 +477,7 @@
 				484273D42B7AD154005E5308 /* CountryCodeScreen.swift */,
 				4887AA852B70FD2400F0C1D5 /* BookingMainScreen.swift */,
 				48855FC92B77F4F10075F174 /* BookingDetailScreen.swift */,
+				484B61472B8537FA0051DDDA /* FAQSScreen.swift */,
 			);
 			path = BookingDetail;
 			sourceTree = "<group>";
@@ -488,6 +497,7 @@
 		48D95A1C2B6FFF7F00DB2837 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
+				484B61432B8537590051DDDA /* FAQSTableViewCell.swift */,
 				488D268B2B604B8D00EFF4FE /* TourTableViewCell.swift */,
 				488D268D2B604BAC00EFF4FE /* PersonTableViewCell.swift */,
 			);
@@ -577,6 +587,7 @@
 				48D95A202B70006200DB2837 /* Wishlist */,
 				48D95A1F2B6FFFFD00DB2837 /* Settings */,
 				48E3D2BA2B1E4D49003D2A62 /* Main.storyboard */,
+				484B61452B8537B30051DDDA /* FAQS.storyboard */,
 				48E3D2BD2B1E4D4B003D2A62 /* Assets.xcassets */,
 				48E3D2BF2B1E4D4B003D2A62 /* LaunchScreen.storyboard */,
 				48E3D2C22B1E4D4B003D2A62 /* Info.plist */,
@@ -609,6 +620,7 @@
 				48E63F4B2B4EF5580068A8C9 /* HeaderSlide.swift */,
 				488D26842B604A5E00EFF4FE /* PersonModel.swift */,
 				484273D62B7AD27E005E5308 /* CountryCode.swift */,
+				484B61412B8536FF0051DDDA /* FAQS.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -766,6 +778,7 @@
 				48B1C0142B7E2BE8000BEE23 /* Rubik-Italic-VariableFont_wght.ttf in Resources */,
 				48E3D2BC2B1E4D49003D2A62 /* Main.storyboard in Resources */,
 				48B1C0132B7E2BE8000BEE23 /* Rubik-VariableFont_wght.ttf in Resources */,
+				484B61462B8537B30051DDDA /* FAQS.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -924,8 +937,10 @@
 				48B1BFF02B7E27AA000BEE23 /* IQToolbar.swift in Sources */,
 				48E3D3282B1E4DA4003D2A62 /* UIViewController.swift in Sources */,
 				48E63F392B4ED04D0068A8C9 /* StringExtention.swift in Sources */,
+				484B61422B8536FF0051DDDA /* FAQS.swift in Sources */,
 				48E63F402B4ED04D0068A8C9 /* SubString.swift in Sources */,
 				48B1C0002B7E27AA000BEE23 /* IQKeyboardManager+Toolbar.swift in Sources */,
+				484B61442B8537590051DDDA /* FAQSTableViewCell.swift in Sources */,
 				48B1C00C2B7E27AA000BEE23 /* IQKeyboardListener.swift in Sources */,
 				48B1C00F2B7E27AA000BEE23 /* IQKeyboardInfo.swift in Sources */,
 				48B1BFE62B7E27AA000BEE23 /* IQRootControllerConfiguration.swift in Sources */,
@@ -934,6 +949,7 @@
 				48E63F2E2B4ED04D0068A8C9 /* ForHideKeyboard.swift in Sources */,
 				48E63F332B4ED04D0068A8C9 /* Table View Scroll To Top.swift in Sources */,
 				48E63F542B5405740068A8C9 /* TabBarScreen.swift in Sources */,
+				484B61482B8537FA0051DDDA /* FAQSScreen.swift in Sources */,
 				48E63F232B4ED04D0068A8C9 /* Reachability.swift in Sources */,
 				48E63F1E2B4ED04D0068A8C9 /* Check Phone Number.swift in Sources */,
 				48E63F322B4ED04D0068A8C9 /* Gradient Colors to a view.swift in Sources */,
