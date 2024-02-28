@@ -17,6 +17,7 @@ class BookingMainScreen: UIViewController, UITableViewDataSource, UITableViewDel
 
         tableView.dataSource = self
         tableView.delegate = self
+        navigationItem.hidesBackButton = true
     }
 
     // MARK: - UITableViewDataSource
@@ -109,7 +110,7 @@ class BookingMainScreen: UIViewController, UITableViewDataSource, UITableViewDel
         }
     }
     
-    @IBAction func gotoBack(_ sender: Any) {
+    @IBAction func goingback(_ sender: Any) {
         if let presentingViewController = self.presentingViewController {
             presentingViewController.dismiss(animated: true, completion: nil)
         } else {

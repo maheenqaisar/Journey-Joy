@@ -18,6 +18,8 @@ class MainDetailScreen: UIViewController, UITableViewDataSource, UITableViewDele
     @IBOutlet var subtitleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     
+    @IBOutlet weak var StoryImage: UIImageView!
+    
     var detailTour: DetailTour?
     var imageArray: [UIImage] = []
     var currentImageIndex: Int = 0
@@ -52,7 +54,17 @@ class MainDetailScreen: UIViewController, UITableViewDataSource, UITableViewDele
 
         // Setup image count label
         updateImageCountLabel()
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        StoryImage.isUserInteractionEnabled = true
+        StoryImage.addGestureRecognizer(tapGestureRecognizer)
 
+    }
+    
+    @objc func imageTapped() {
+        if let nextScreenVC = UIStoryboard(name: "Detail", bundle: nil).instantiateViewController(withIdentifier: "AllDetailScreen") as? AllDetailScreen {
+            navigationController?.pushViewController(nextScreenVC, animated: true)
+        }
     }
     
     @objc func handleSwipe(_ sender: UISwipeGestureRecognizer) {

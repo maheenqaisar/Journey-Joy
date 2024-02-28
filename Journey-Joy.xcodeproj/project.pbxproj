@@ -19,6 +19,7 @@
 		484B61482B8537FA0051DDDA /* FAQSScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B61472B8537FA0051DDDA /* FAQSScreen.swift */; };
 		485697152B2214510006AFAC /* OTPScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485697142B2214510006AFAC /* OTPScreen.swift */; };
 		48613B302B2103FA005C732F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48613B2F2B2103FA005C732F /* LoginScreen.swift */; };
+		486426232B8A737400CA4329 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 486426222B8A737400CA4329 /* Detail.storyboard */; };
 		487291332B5AB5D0002392C9 /* FilterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487291322B5AB5D0002392C9 /* FilterScreen.swift */; };
 		4881EFEB2B42CB3B0036D9C9 /* CategoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881EFEA2B42CB3B0036D9C9 /* CategoryScreen.swift */; };
 		48855FCA2B77F4F10075F174 /* BookingDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48855FC92B77F4F10075F174 /* BookingDetailScreen.swift */; };
@@ -33,6 +34,9 @@
 		488D26922B627DD900EFF4FE /* DetailTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488D26912B627DD900EFF4FE /* DetailTour.swift */; };
 		488D26942B6426DD00EFF4FE /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488D26932B6426DD00EFF4FE /* UIStackView.swift */; };
 		488D26B62B658E1F00EFF4FE /* MainDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488D26B52B658E1F00EFF4FE /* MainDetailScreen.swift */; };
+		48AE19052B8B4AA400ADB11B /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48AE19042B8B4AA400ADB11B /* Reviews.storyboard */; };
+		48AE19092B8E881800ADB11B /* ReservationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AE19082B8E881800ADB11B /* ReservationScreen.swift */; };
+		48AE190B2B8E8DFE00ADB11B /* DirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AE190A2B8E8DFE00ADB11B /* DirectionView.swift */; };
 		48B1BFE42B7E27AA000BEE23 /* IQToolbarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1BFAE2B7E27AA000BEE23 /* IQToolbarConfiguration.swift */; };
 		48B1BFE52B7E27AA000BEE23 /* IQToolbarPlaceholderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1BFAF2B7E27AA000BEE23 /* IQToolbarPlaceholderConfiguration.swift */; };
 		48B1BFE62B7E27AA000BEE23 /* IQRootControllerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1BFB02B7E27AA000BEE23 /* IQRootControllerConfiguration.swift */; };
@@ -79,12 +83,17 @@
 		48B1C00F2B7E27AA000BEE23 /* IQKeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1BFE32B7E27AA000BEE23 /* IQKeyboardInfo.swift */; };
 		48B1C0132B7E2BE8000BEE23 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48B1C0112B7E2BE7000BEE23 /* Rubik-VariableFont_wght.ttf */; };
 		48B1C0142B7E2BE8000BEE23 /* Rubik-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48B1C0122B7E2BE7000BEE23 /* Rubik-Italic-VariableFont_wght.ttf */; };
+		48CB31372B87FD1200C76439 /* OpenHoursScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB31362B87FD1200C76439 /* OpenHoursScreen.swift */; };
 		48D8BA722B7963E800D59AF1 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D8BA712B7963E800D59AF1 /* PersonView.swift */; };
 		48D8BA742B79640400D59AF1 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D8BA732B79640400D59AF1 /* CalenderView.swift */; };
 		48D8BA762B79641900D59AF1 /* TourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D8BA752B79641900D59AF1 /* TourView.swift */; };
 		48D8BA7A2B7976FC00D59AF1 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D8BA792B7976FC00D59AF1 /* CustomView.swift */; };
 		48D8BA7D2B7ACB8400D59AF1 /* PhoneNumberScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D8BA7C2B7ACB8400D59AF1 /* PhoneNumberScreen.swift */; };
 		48D95A252B7001AF00DB2837 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D95A242B7001AF00DB2837 /* DetailCollectionViewCell.swift */; };
+		48E1C9D62B8667220059095B /* AllDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E1C9D52B8667220059095B /* AllDetailScreen.swift */; };
+		48E1C9D82B866E9E0059095B /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E1C9D72B866E9E0059095B /* StoriesView.swift */; };
+		48E1C9DA2B8670B90059095B /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E1C9D92B8670B90059095B /* StoriesCollectionViewCell.swift */; };
+		48E1C9DC2B8671EA0059095B /* StoryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E1C9DB2B8671EA0059095B /* StoryDetail.swift */; };
 		48E3D2B52B1E4D49003D2A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E3D2B42B1E4D49003D2A62 /* AppDelegate.swift */; };
 		48E3D2B72B1E4D49003D2A62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E3D2B62B1E4D49003D2A62 /* SceneDelegate.swift */; };
 		48E3D2BC2B1E4D49003D2A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E3D2BA2B1E4D49003D2A62 /* Main.storyboard */; };
@@ -142,6 +151,7 @@
 		48E63F542B5405740068A8C9 /* TabBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E63F532B5405730068A8C9 /* TabBarScreen.swift */; };
 		48E63F562B54065D0068A8C9 /* WishlistScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E63F552B54065C0068A8C9 /* WishlistScreen.swift */; };
 		48E63F582B54079C0068A8C9 /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E63F572B54079C0068A8C9 /* SettingScreen.swift */; };
+		48F1580D2B8781A300833FEA /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F1580C2B8781A300833FEA /* BrowseView.swift */; };
 		FC470B5B54ACDD06930CB2C2 /* Pods_Journey_Joy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E750738C1B53B0A9DCAFBE65 /* Pods_Journey_Joy.framework */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +168,7 @@
 		484B61472B8537FA0051DDDA /* FAQSScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQSScreen.swift; sourceTree = "<group>"; };
 		485697142B2214510006AFAC /* OTPScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPScreen.swift; sourceTree = "<group>"; };
 		48613B2F2B2103FA005C732F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		486426222B8A737400CA4329 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		487291322B5AB5D0002392C9 /* FilterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterScreen.swift; sourceTree = "<group>"; };
 		4881EFEA2B42CB3B0036D9C9 /* CategoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScreen.swift; sourceTree = "<group>"; };
 		48855FC92B77F4F10075F174 /* BookingDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailScreen.swift; sourceTree = "<group>"; };
@@ -172,6 +183,9 @@
 		488D26912B627DD900EFF4FE /* DetailTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTour.swift; sourceTree = "<group>"; };
 		488D26932B6426DD00EFF4FE /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		488D26B52B658E1F00EFF4FE /* MainDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailScreen.swift; sourceTree = "<group>"; };
+		48AE19042B8B4AA400ADB11B /* Reviews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reviews.storyboard; sourceTree = "<group>"; };
+		48AE19082B8E881800ADB11B /* ReservationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationScreen.swift; sourceTree = "<group>"; };
+		48AE190A2B8E8DFE00ADB11B /* DirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionView.swift; sourceTree = "<group>"; };
 		48B1BFAE2B7E27AA000BEE23 /* IQToolbarConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbarConfiguration.swift; sourceTree = "<group>"; };
 		48B1BFAF2B7E27AA000BEE23 /* IQToolbarPlaceholderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbarPlaceholderConfiguration.swift; sourceTree = "<group>"; };
 		48B1BFB02B7E27AA000BEE23 /* IQRootControllerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQRootControllerConfiguration.swift; sourceTree = "<group>"; };
@@ -219,12 +233,17 @@
 		48B1BFE32B7E27AA000BEE23 /* IQKeyboardInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardInfo.swift; sourceTree = "<group>"; };
 		48B1C0112B7E2BE7000BEE23 /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		48B1C0122B7E2BE7000BEE23 /* Rubik-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		48CB31362B87FD1200C76439 /* OpenHoursScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenHoursScreen.swift; sourceTree = "<group>"; };
 		48D8BA712B7963E800D59AF1 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		48D8BA732B79640400D59AF1 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
 		48D8BA752B79641900D59AF1 /* TourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourView.swift; sourceTree = "<group>"; };
 		48D8BA792B7976FC00D59AF1 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		48D8BA7C2B7ACB8400D59AF1 /* PhoneNumberScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberScreen.swift; sourceTree = "<group>"; };
 		48D95A242B7001AF00DB2837 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		48E1C9D52B8667220059095B /* AllDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDetailScreen.swift; sourceTree = "<group>"; };
+		48E1C9D72B866E9E0059095B /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		48E1C9D92B8670B90059095B /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		48E1C9DB2B8671EA0059095B /* StoryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDetail.swift; sourceTree = "<group>"; };
 		48E3D2B12B1E4D49003D2A62 /* Journey-Joy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journey-Joy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E3D2B42B1E4D49003D2A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48E3D2B62B1E4D49003D2A62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -284,6 +303,7 @@
 		48E63F532B5405730068A8C9 /* TabBarScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarScreen.swift; sourceTree = "<group>"; };
 		48E63F552B54065C0068A8C9 /* WishlistScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistScreen.swift; sourceTree = "<group>"; };
 		48E63F572B54079C0068A8C9 /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
+		48F1580C2B8781A300833FEA /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		B9060A825768DAA9FC2E02AC /* Pods-Journey-Joy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Journey-Joy.debug.xcconfig"; path = "Target Support Files/Pods-Journey-Joy/Pods-Journey-Joy.debug.xcconfig"; sourceTree = "<group>"; };
 		E750738C1B53B0A9DCAFBE65 /* Pods_Journey_Joy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Journey_Joy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6911BA8B9E96595D097BD49 /* Pods-Journey-Joy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Journey-Joy.release.xcconfig"; path = "Target Support Files/Pods-Journey-Joy/Pods-Journey-Joy.release.xcconfig"; sourceTree = "<group>"; };
@@ -326,6 +346,13 @@
 				4881EFEA2B42CB3B0036D9C9 /* CategoryScreen.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		48AE19032B8B4A7E00ADB11B /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reviews;
 			sourceTree = "<group>";
 		};
 		48B1BFAC2B7E27AA000BEE23 /* IQKeyboardManagerSwift */ = {
@@ -469,6 +496,17 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		48BE56162B8A36FC00EFCD7C /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				48E1C9D72B866E9E0059095B /* StoriesView.swift */,
+				48F1580C2B8781A300833FEA /* BrowseView.swift */,
+				48E1C9D52B8667220059095B /* AllDetailScreen.swift */,
+				48CB31362B87FD1200C76439 /* OpenHoursScreen.swift */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
 		48D8BA7B2B7A4DB900D59AF1 /* BookingDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -490,6 +528,7 @@
 				488D26802B6049DB00EFF4FE /* MyTripCollectionViewCell.swift */,
 				488D267E2B6049B400EFF4FE /* MyGroupCollectionViewCell.swift */,
 				48D95A242B7001AF00DB2837 /* DetailCollectionViewCell.swift */,
+				48E1C9D92B8670B90059095B /* StoriesCollectionViewCell.swift */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -545,6 +584,8 @@
 			isa = PBXGroup;
 			children = (
 				480BB8772B54905600BCA762 /* BookingScreen.swift */,
+				48AE19082B8E881800ADB11B /* ReservationScreen.swift */,
+				48AE190A2B8E8DFE00ADB11B /* DirectionView.swift */,
 			);
 			path = Bookings;
 			sourceTree = "<group>";
@@ -586,10 +627,14 @@
 				48D95A212B7000A900DB2837 /* Bookings */,
 				48D95A202B70006200DB2837 /* Wishlist */,
 				48D95A1F2B6FFFFD00DB2837 /* Settings */,
+				48BE56162B8A36FC00EFCD7C /* Stories */,
+				48AE19032B8B4A7E00ADB11B /* Reviews */,
 				48E3D2BA2B1E4D49003D2A62 /* Main.storyboard */,
 				484B61452B8537B30051DDDA /* FAQS.storyboard */,
-				48E3D2BD2B1E4D4B003D2A62 /* Assets.xcassets */,
 				48E3D2BF2B1E4D4B003D2A62 /* LaunchScreen.storyboard */,
+				486426222B8A737400CA4329 /* Detail.storyboard */,
+				48AE19042B8B4AA400ADB11B /* Reviews.storyboard */,
+				48E3D2BD2B1E4D4B003D2A62 /* Assets.xcassets */,
 				48E3D2C22B1E4D4B003D2A62 /* Info.plist */,
 			);
 			path = "Journey-Joy";
@@ -621,6 +666,7 @@
 				488D26842B604A5E00EFF4FE /* PersonModel.swift */,
 				484273D62B7AD27E005E5308 /* CountryCode.swift */,
 				484B61412B8536FF0051DDDA /* FAQS.swift */,
+				48E1C9DB2B8671EA0059095B /* StoryDetail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -775,6 +821,8 @@
 				48E3D2C12B1E4D4B003D2A62 /* LaunchScreen.storyboard in Resources */,
 				48E3D2BE2B1E4D4B003D2A62 /* Assets.xcassets in Resources */,
 				48B1C0022B7E27AA000BEE23 /* PrivacyInfo.xcprivacy in Resources */,
+				486426232B8A737400CA4329 /* Detail.storyboard in Resources */,
+				48AE19052B8B4AA400ADB11B /* Reviews.storyboard in Resources */,
 				48B1C0142B7E2BE8000BEE23 /* Rubik-Italic-VariableFont_wght.ttf in Resources */,
 				48E3D2BC2B1E4D49003D2A62 /* Main.storyboard in Resources */,
 				48B1C0132B7E2BE8000BEE23 /* Rubik-VariableFont_wght.ttf in Resources */,
@@ -847,6 +895,7 @@
 				48B1BFF32B7E27AA000BEE23 /* IQInvocation.swift in Sources */,
 				48E63F222B4ED04D0068A8C9 /* Designable Class button.swift in Sources */,
 				480BB8782B54905600BCA762 /* BookingScreen.swift in Sources */,
+				48E1C9D82B866E9E0059095B /* StoriesView.swift in Sources */,
 				48D8BA722B7963E800D59AF1 /* PersonView.swift in Sources */,
 				48E63F472B4ED04D0068A8C9 /* Safe Area.swift in Sources */,
 				48E63F2F2B4ED04D0068A8C9 /* Show Tost.swift in Sources */,
@@ -854,9 +903,12 @@
 				48E63F3D2B4ED04D0068A8C9 /* image For Empty data.swift in Sources */,
 				48E63F2A2B4ED04D0068A8C9 /* TextFieldPadding.swift in Sources */,
 				4887AA862B70FD2400F0C1D5 /* BookingMainScreen.swift in Sources */,
+				48AE19092B8E881800ADB11B /* ReservationScreen.swift in Sources */,
+				48E1C9DC2B8671EA0059095B /* StoryDetail.swift in Sources */,
 				48B1BFFA2B7E27AA000BEE23 /* IQKeyboardManager+ToolbarActions.swift in Sources */,
 				48B1BFF92B7E27AA000BEE23 /* IQKeyboardManager+Deprecated.swift in Sources */,
 				48E63F3F2B4ED04D0068A8C9 /* Currency Format.swift in Sources */,
+				48E1C9DA2B8670B90059095B /* StoriesCollectionViewCell.swift in Sources */,
 				48E46F452B20A91F00EA3414 /* GuestScreen.swift in Sources */,
 				48B1BFFE2B7E27AA000BEE23 /* IQKeyboardManager.swift in Sources */,
 				48B1BFF22B7E27AA000BEE23 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
@@ -897,6 +949,7 @@
 				488D267F2B6049B400EFF4FE /* MyGroupCollectionViewCell.swift in Sources */,
 				48B1BFFC2B7E27AA000BEE23 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
 				48B1BFF12B7E27AA000BEE23 /* IQUIView+IQKeyboardToolbarDeprecated.swift in Sources */,
+				48CB31372B87FD1200C76439 /* OpenHoursScreen.swift in Sources */,
 				48B1BFE92B7E27AA000BEE23 /* IQScrollViewConfiguration.swift in Sources */,
 				48E3D3272B1E4DA4003D2A62 /* UserDefaults.swift in Sources */,
 				48E63F3B2B4ED04D0068A8C9 /* Collection Scroll to top.swift in Sources */,
@@ -908,12 +961,14 @@
 				488D26942B6426DD00EFF4FE /* UIStackView.swift in Sources */,
 				48B1BFF72B7E27AA000BEE23 /* IQKeyboardReturnKeyHandler+TextViewDelegate.swift in Sources */,
 				488D26812B6049DB00EFF4FE /* MyTripCollectionViewCell.swift in Sources */,
+				48AE190B2B8E8DFE00ADB11B /* DirectionView.swift in Sources */,
 				48E63F482B4ED04D0068A8C9 /* Remove Float Points.swift in Sources */,
 				48B1C00E2B7E27AA000BEE23 /* IQTextFieldViewInfo.swift in Sources */,
 				48B1BFF62B7E27AA000BEE23 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				48E63F562B54065D0068A8C9 /* WishlistScreen.swift in Sources */,
 				48E63F432B4ED04D0068A8C9 /* AppNavigation.swift in Sources */,
 				48855FCA2B77F4F10075F174 /* BookingDetailScreen.swift in Sources */,
+				48F1580D2B8781A300833FEA /* BrowseView.swift in Sources */,
 				48D95A252B7001AF00DB2837 /* DetailCollectionViewCell.swift in Sources */,
 				48E63F4E2B4EF5C60068A8C9 /* HeaderCell.swift in Sources */,
 				48B1BFED2B7E27AA000BEE23 /* IQPreviousNextView.swift in Sources */,
@@ -938,6 +993,7 @@
 				48E3D3282B1E4DA4003D2A62 /* UIViewController.swift in Sources */,
 				48E63F392B4ED04D0068A8C9 /* StringExtention.swift in Sources */,
 				484B61422B8536FF0051DDDA /* FAQS.swift in Sources */,
+				48E1C9D62B8667220059095B /* AllDetailScreen.swift in Sources */,
 				48E63F402B4ED04D0068A8C9 /* SubString.swift in Sources */,
 				48B1C0002B7E27AA000BEE23 /* IQKeyboardManager+Toolbar.swift in Sources */,
 				484B61442B8537590051DDDA /* FAQSTableViewCell.swift in Sources */,
@@ -1109,6 +1165,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9GDBJBL379;
@@ -1117,9 +1174,9 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Journey Joy";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1140,6 +1197,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9GDBJBL379;
@@ -1148,9 +1206,9 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Journey Joy";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

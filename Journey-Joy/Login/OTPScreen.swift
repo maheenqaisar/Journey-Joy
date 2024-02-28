@@ -11,10 +11,10 @@ class OTPScreen: UIViewController, UITextFieldDelegate {
 
     // MARK: - Outlets
 
-    @IBOutlet private weak var tf1: UITextField!
-    @IBOutlet private weak var tf2: UITextField!
-    @IBOutlet private weak var tf3: UITextField!
-    @IBOutlet private weak var tf4: UITextField!
+    @IBOutlet private weak var otptf1: UITextField!
+    @IBOutlet private weak var otptf2: UITextField!
+    @IBOutlet private weak var otptf3: UITextField!
+    @IBOutlet private weak var otptf4: UITextField!
     @IBOutlet private weak var proceedButton: UIButton!
 
     // MARK: - Lifecycle Methods
@@ -28,13 +28,13 @@ class OTPScreen: UIViewController, UITextFieldDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tf1.becomeFirstResponder()
+        otptf1.becomeFirstResponder()
     }
 
     // MARK: - Private Methods
 
     private func setupTextFields() {
-        let textFields = [tf1, tf2, tf3, tf4]
+        let textFields = [otptf1, otptf2, otptf3, otptf4]
         textFields.forEach {
             $0?.delegate = self
             $0?.addTarget(self, action: #selector(textDidChange(textField:)), for: .editingChanged)
@@ -95,14 +95,14 @@ class OTPScreen: UIViewController, UITextFieldDelegate {
         }
 
         switch textField {
-        case tf1:
-            tf2.becomeFirstResponder()
-        case tf2:
-            tf3.becomeFirstResponder()
-        case tf3:
-            tf4.becomeFirstResponder()
-        case tf4:
-            tf4.resignFirstResponder()
+        case otptf1:
+            otptf2.becomeFirstResponder()
+        case otptf2:
+            otptf3.becomeFirstResponder()
+        case otptf3:
+            otptf4.becomeFirstResponder()
+        case otptf4:
+            otptf4.resignFirstResponder()
             checkIfAllFieldsFilled()
         default:
             break
@@ -110,7 +110,7 @@ class OTPScreen: UIViewController, UITextFieldDelegate {
     }
 
     private func checkIfAllFieldsFilled() {
-        let allFieldsFilled = ![tf1, tf2, tf3, tf4].map { $0?.text?.isEmpty ?? true }.contains(true)
+        let allFieldsFilled = ![otptf1, otptf2, otptf3, otptf4].map { $0?.text?.isEmpty ?? true }.contains(true)
         updateProceedButtonAppearance(enabled: allFieldsFilled)
     }
 }

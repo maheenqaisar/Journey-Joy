@@ -15,3 +15,33 @@ import UIKit
 //        self.layer.addSublayer(border)
 //    }
 //}
+
+extension UIView {
+    func addTopBorder(withColor color: UIColor, thickness: CGFloat) {
+        let borderView = UIView()
+        borderView.backgroundColor = color
+        borderView.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(borderView)
+        
+        NSLayoutConstraint.activate([
+            borderView.topAnchor.constraint(equalTo: self.topAnchor),
+            borderView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            borderView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            borderView.heightAnchor.constraint(equalToConstant: thickness)
+        ])
+    }
+    
+    func addBottomBorder(withColor color: UIColor, thickness: CGFloat) {
+        let borderView = UIView()
+        borderView.backgroundColor = color
+        borderView.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(borderView)
+        
+        NSLayoutConstraint.activate([
+            borderView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            borderView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            borderView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            borderView.heightAnchor.constraint(equalToConstant: thickness)
+        ])
+    }
+}
